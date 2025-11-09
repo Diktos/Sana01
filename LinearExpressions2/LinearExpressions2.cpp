@@ -1,20 +1,39 @@
-// LinearExpressions2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <math.h>
+#include <windows.h>
 
-#include <iostream>
+int main() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
 
-int main()
-{
-    std::cout << "Hello World!\n";
+    double m, n, x, a, b;
+    double z1, z2, y;
+
+    printf("¬вед≥ть a: ");
+    scanf("%lf", &a);
+    printf("¬вед≥ть b: ");
+    scanf("%lf", &b);
+    printf("¬вед≥ть m: ");
+    scanf("%lf", &m);
+    printf("¬вед≥ть n: ");
+    scanf("%lf", &n);
+    printf("¬вед≥ть x: ");
+    scanf("%lf", &x);
+
+    z1 = ((m - 1) * sqrt(m) - (n - 1) * sqrt(n)) /
+        (sqrt(pow(m, 3) * n) + n * m + pow(m, 2) - m);
+
+    z2 = (sqrt(m) - sqrt(n)) / m;
+
+    y = 2.4 * fabs((pow(x, 2) + b) / a)
+        + (a - b) * pow(sin(a - b), 2)
+        + pow(10.0, -2.0) * (x - b);
+
+    printf("\n–езультати:\n");
+    printf("z1 = %.6lf\n", z1);
+    printf("z2 = %.6lf\n", z2);
+    printf("y  = %.6lf\n", y);
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
