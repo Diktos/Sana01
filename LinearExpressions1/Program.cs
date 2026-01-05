@@ -32,7 +32,7 @@ while (!double.TryParse(Console.ReadLine(), out d))
     Console.Write("Помилка! Введіть коректне число d: ");
 }
 
-x = (a + 2 * b - c + d) / (c * d) + (a + b) / (c - d) + Math.Pow(a, 2) / Math.Pow(b, 2);
+x = (a + 2 * b - c + d) / (c * d) + (a + b) / (c - d) - Math.Pow(a, 2) / Math.Pow(b, 2); 
 
 y = (5 * (a + b) * (c - d)) / (0.5 * c) + Math.Pow(d, 2) * (Math.Pow(a, 2) - Math.Pow(b, 2)) / (b - a);
 
